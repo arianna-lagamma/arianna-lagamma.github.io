@@ -1,0 +1,385 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f5f2ec;
+  color: #3f3f3a;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-header {
+  padding: 1.5rem 1.5rem 0;
+}
+
+.nav-pill {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #e6e2dc;
+  border-radius: 999px;
+  padding: 1rem 1.5rem;
+}
+
+.main-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.72rem;
+  color: #4f4f49;
+}
+
+.home-link {
+  justify-self: start;
+  font-size: 1.15rem;
+}
+
+.contact-link {
+  justify-self: end;
+}
+
+.main-nav a:hover {
+  opacity: 0.7;
+}
+
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 88vh;
+  padding: 4rem 1.5rem 2rem;
+  display: grid;
+  grid-template-columns: 1.65fr 0.85fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.hero-left {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 3rem;
+}
+
+.hero-name {
+  font-size: clamp(5rem, 10vw, 8.5rem);
+  line-height: 0.88;
+  letter-spacing: -0.05em;
+  color: #3b3b37;
+  font-weight: 400;
+}
+
+.hero-text {
+  max-width: 760px;
+  padding-top: 2rem;
+}
+
+.hero-statement {
+  font-size: clamp(1.8rem, 3vw, 2.45rem);
+  line-height: 1.45;
+  color: #45453f;
+  max-width: 720px;
+}
+
+.hero-subtext {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.9;
+  color: #5b5b55;
+  max-width: 720px;
+}
+
+.hero-tag {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 3rem;
+}
+
+.tag-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid #d8d5cf;
+  background: #ddd9d2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  color: #3f3f3a;
+}
+
+.tag-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: #5a5a54;
+}
+
+.tag-text p + p {
+  margin-top: 0.4rem;
+}
+
+.hero-right {
+  min-height: 70vh;
+  display: flex;
+  align-items: flex-end;
+}
+
+.start-links {
+  width: 100%;
+  max-width: 420px;
+  padding-bottom: 0.5rem;
+}
+
+.start-label,
+.section-label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: #6b6b64;
+}
+
+.start-links .start-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.55rem 0.5rem;
+  border-radius: 1rem;
+  color: #4a4a45;
+  margin-top: 0.45rem;
+  transition: background 0.2s ease;
+}
+
+.start-links .start-link:hover {
+  background: #ece8e1;
+}
+
+.start-icon {
+  width: 44px;
+  height: 44px;
+  border: 1px solid #d6d3cc;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5c5c56;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.start-link span:last-child {
+  font-size: 1.45rem;
+  line-height: 1.6;
+}
+
+.content-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+.about-section {
+  padding-top: 2rem;
+}
+
+.section-card {
+  background: #efeae2;
+  border: 1px solid #ddd8d0;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.section-card h2 {
+  margin-top: 0.75rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #3b3b37;
+}
+
+.section-body {
+  margin-top: 1rem;
+  max-width: 760px;
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: #4e4e48;
+}
+
+.section-heading h2 {
+  margin-top: 0.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #3b3b37;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.content-card {
+  background: #fbf9f5;
+  border: 1px solid #ddd8d0;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+}
+
+.content-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #3d3d38;
+}
+
+.content-card p {
+  margin-top: 0.85rem;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: #5b5b55;
+}
+
+.content-card a {
+  display: inline-block;
+  margin-top: 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color: #3d3d38;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.pill-tag {
+  background: #ece7df;
+  color: #575750;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+}
+
+.card-date {
+  font-size: 0.92rem;
+  color: #6a6a63;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.social-links a {
+  background: #fbf9f5;
+  border: 1px solid #d6d3cc;
+  border-radius: 1rem;
+  padding: 0.9rem 1.2rem;
+  transition: background 0.2s ease;
+}
+
+.social-links a:hover {
+  background: #e8e3db;
+}
+
+.site-footer {
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #6a6a63;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    gap: 2rem;
+    padding-top: 2.5rem;
+  }
+
+  .hero-left,
+  .hero-right {
+    min-height: auto;
+  }
+
+  .hero-right {
+    align-items: flex-start;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main-nav {
+    grid-template-columns: repeat(5, 1fr);
+    font-size: 0.62rem;
+    gap: 0.5rem;
+  }
+
+  .start-link span:last-child {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .site-header {
+    padding: 1rem 1rem 0;
+  }
+
+  .nav-pill {
+    border-radius: 1.5rem;
+    padding: 1rem;
+  }
+
+  .main-nav {
+    font-size: 0.58rem;
+    letter-spacing: 0.12em;
+  }
+
+  .hero,
+  .content-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .hero-name {
+    font-size: 4rem;
+  }
+
+  .hero-statement {
+    font-size: 1.5rem;
+  }
+
+  .hero-subtext {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .section-card,
+  .content-card {
+    padding: 1.25rem;
+  }
+}
