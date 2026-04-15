@@ -378,6 +378,231 @@ a {
     line-height: 1.7;
   }
 
+  .work-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  overflow: hidden;
+}
+
+.work-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.work-header h2 {
+  font-size: clamp(4rem, 10vw, 7.5rem);
+  line-height: 0.95;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  color: #3b3b37;
+}
+
+.work-carousel-wrap {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 1rem;
+  scrollbar-width: none;
+}
+
+.work-carousel-wrap::-webkit-scrollbar {
+  display: none;
+}
+
+.work-carousel {
+  display: flex;
+  gap: 4.5rem;
+  align-items: flex-start;
+  width: max-content;
+  padding: 1rem 8vw 1rem 8vw;
+}
+
+.work-card {
+  width: 250px;
+  flex: 0 0 auto;
+  opacity: 0.45;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.work-card:hover {
+  opacity: 1;
+  transform: translateY(-4px);
+}
+
+.featured-card {
+  opacity: 1;
+}
+
+.work-image-card {
+  display: block;
+}
+
+.work-image {
+  width: 250px;
+  height: 345px;
+  border-radius: 2rem;
+  border: 1px solid #d9d5ce;
+  box-shadow: 0 10px 24px rgba(40, 40, 35, 0.08);
+}
+
+.work-image-1 {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.35), rgba(255,255,255,0.05)),
+    linear-gradient(135deg, #e8ece7, #d9ddd7);
+}
+
+.work-image-2 {
+  background:
+    radial-gradient(circle at 45% 40%, rgba(255,255,255,0.85) 0 18%, transparent 19%),
+    linear-gradient(180deg, #e8eff3, #dbe4ea);
+}
+
+.work-image-3 {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.4), rgba(255,255,255,0.06)),
+    linear-gradient(180deg, #efb7c7, #eb7d63);
+}
+
+.work-image-4 {
+  background:
+    radial-gradient(circle at 50% 30%, #f3bb3a 0 28%, transparent 29%),
+    linear-gradient(180deg, #f48f8f, #e66b65);
+}
+
+.work-image-5 {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.45), rgba(255,255,255,0.08)),
+    linear-gradient(135deg, #efede8, #ddd9d0);
+}
+
+.work-info {
+  padding-top: 1.4rem;
+  text-align: center;
+}
+
+.work-info h3 {
+  font-size: 1.05rem;
+  line-height: 1.35;
+  font-weight: 600;
+  color: #3f3f3a;
+}
+
+.work-tags {
+  margin-top: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.45rem;
+}
+
+.work-tags span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  background: #ece9e2;
+  color: #66665f;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.work-carousel-footer {
+  max-width: 1220px;
+  margin: 3.25rem auto 0;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 2rem;
+  align-items: center;
+}
+
+.work-nav-button {
+  border: 1px solid #d2cec6;
+  background: #f8f5ef;
+  color: #45505a;
+  border-radius: 999px;
+  padding: 1rem 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.work-nav-button:hover {
+  background: #ece7de;
+  transform: translateY(-1px);
+}
+
+.work-progress {
+  position: relative;
+  height: 2px;
+  background: #d4d0c8;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.work-progress-fill {
+  display: block;
+  width: 34%;
+  height: 100%;
+  background: #4c5454;
+  border-radius: 999px;
+}
+
+@media (max-width: 900px) {
+  .work-carousel {
+    gap: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .work-card,
+  .work-image {
+    width: 220px;
+  }
+
+  .work-image {
+    height: 300px;
+  }
+
+  .work-carousel-footer {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .work-progress {
+    order: 3;
+  }
+}
+
+@media (max-width: 640px) {
+  .work-header {
+    margin-bottom: 2rem;
+  }
+
+  .work-card,
+  .work-image {
+    width: 190px;
+  }
+
+  .work-image {
+    height: 255px;
+    border-radius: 1.5rem;
+  }
+
+  .work-info h3 {
+    font-size: 0.95rem;
+  }
+
+  .work-tags span {
+    font-size: 0.62rem;
+  }
+}
+
   .section-card,
   .content-card {
     padding: 1.25rem;
