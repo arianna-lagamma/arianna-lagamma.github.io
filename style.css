@@ -396,7 +396,11 @@ a {
 }
 
 .work-image-5 {
-  background: linear-gradient(135deg, #efede8, #ddd9d0);
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)),
+    url("images/canada.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .work-image-6 {
