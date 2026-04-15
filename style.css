@@ -312,72 +312,7 @@ a {
   color: #6a6a63;
 }
 
-@media (max-width: 900px) {
-  .hero {
-    grid-template-columns: 1fr;
-    min-height: auto;
-    gap: 2rem;
-    padding-top: 2.5rem;
-  }
-
-  .hero-left,
-  .hero-right {
-    min-height: auto;
-  }
-
-  .hero-right {
-    align-items: flex-start;
-  }
-
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .main-nav {
-    grid-template-columns: repeat(5, 1fr);
-    font-size: 0.62rem;
-    gap: 0.5rem;
-  }
-
-  .start-link span:last-child {
-    font-size: 1.1rem;
-  }
-}
-
-@media (max-width: 640px) {
-  .site-header {
-    padding: 1rem 1rem 0;
-  }
-
-  .nav-pill {
-    border-radius: 1.5rem;
-    padding: 1rem;
-  }
-
-  .main-nav {
-    font-size: 0.58rem;
-    letter-spacing: 0.12em;
-  }
-
-  .hero,
-  .content-section {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .hero-name {
-    font-size: 4rem;
-  }
-
-  .hero-statement {
-    font-size: 1.5rem;
-  }
-
-  .hero-subtext {
-    font-size: 1rem;
-    line-height: 1.7;
-  }
-
+/* Work carousel */
 .work-section {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -538,6 +473,36 @@ a {
 }
 
 @media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    gap: 2rem;
+    padding-top: 2.5rem;
+  }
+
+  .hero-left,
+  .hero-right {
+    min-height: auto;
+  }
+
+  .hero-right {
+    align-items: flex-start;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main-nav {
+    grid-template-columns: repeat(5, 1fr);
+    font-size: 0.62rem;
+    gap: 0.5rem;
+  }
+
+  .start-link span:last-child {
+    font-size: 1.1rem;
+  }
+
   .work-carousel {
     gap: 2rem;
     padding-left: 1rem;
@@ -560,6 +525,44 @@ a {
 }
 
 @media (max-width: 640px) {
+  .site-header {
+    padding: 1rem 1rem 0;
+  }
+
+  .nav-pill {
+    border-radius: 1.5rem;
+    padding: 1rem;
+  }
+
+  .main-nav {
+    font-size: 0.58rem;
+    letter-spacing: 0.12em;
+  }
+
+  .hero,
+  .content-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .hero-name {
+    font-size: 4rem;
+  }
+
+  .hero-statement {
+    font-size: 1.5rem;
+  }
+
+  .hero-subtext {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .section-card,
+  .content-card {
+    padding: 1.25rem;
+  }
+
   .work-header {
     margin-bottom: 2rem;
   }
