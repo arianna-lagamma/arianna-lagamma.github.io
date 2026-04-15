@@ -585,6 +585,7 @@ a {
     font-size: 0.62rem;
   }
 }
+
 /* BLOG - editorial layout */
 .editorial-blog-section {
   max-width: 1200px;
@@ -594,7 +595,7 @@ a {
 
 .editorial-blog-grid {
   display: grid;
-  grid-template-columns: 0.95fr 1.2fr;
+  grid-template-columns: minmax(280px, 0.95fr) minmax(420px, 1.2fr);
   gap: 6rem;
   align-items: start;
 }
@@ -631,10 +632,12 @@ a {
   font-size: 1rem;
   color: #55554e;
   margin-top: 0.4rem;
+  flex-shrink: 0;
 }
 
 .editorial-drafts {
   max-width: 430px;
+  width: 100%;
 }
 
 .editorial-label {
@@ -647,6 +650,7 @@ a {
 }
 
 .draft-list {
+  width: 100%;
   border-top: 1px solid #d2cec6;
   border-bottom: 1px solid #d2cec6;
   padding: 1rem 0;
@@ -654,6 +658,7 @@ a {
 
 .draft-link {
   display: block;
+  width: 100%;
   font-size: 1.05rem;
   line-height: 1.8;
   color: #4d4d47;
@@ -666,6 +671,7 @@ a {
 
 .editorial-blog-right {
   max-width: 700px;
+  width: 100%;
 }
 
 .editorial-date {
@@ -718,58 +724,6 @@ a {
   transform: translateY(-1px);
 }
 
-/* FEATURED WORK SECTION */
-.featured-work-section {
-  background: #ece5dc;
-  padding: 1rem 0;
-}
-
-.featured-work-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.featured-work-card {
-  background: #f7f3ed;
-  border: 1px solid #d7d1c8;
-  border-radius: 2rem;
-  padding: 2rem;
-  min-height: 320px;
-}
-
-.featured-work-date {
-  font-size: 0.9rem;
-  color: #6a6a63;
-  margin-bottom: 0.8rem;
-}
-
-.featured-work-card h3 {
-  font-size: 1.2rem;
-  line-height: 1.2;
-  font-weight: 700;
-  color: #3c3c37;
-  margin-bottom: 1rem;
-}
-
-.featured-work-card p {
-  font-size: 1rem;
-  line-height: 1.8;
-  color: #5b5b55;
-}
-
-.featured-work-card a {
-  display: inline-block;
-  margin-top: 1.5rem;
-  font-size: 0.95rem;
-  font-weight: 700;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  color: #3d3d38;
-}
-
-/* responsive */
 @media (max-width: 900px) {
   .editorial-blog-grid {
     grid-template-columns: 1fr;
@@ -779,10 +733,6 @@ a {
   .editorial-blog-left {
     min-height: auto;
     gap: 2rem;
-  }
-
-  .featured-work-grid {
-    grid-template-columns: 1fr;
   }
 }
 
@@ -798,10 +748,5 @@ a {
 
   .editorial-feature-title {
     font-size: 2rem;
-  }
-
-  .featured-work-card {
-    padding: 1.5rem;
-    border-radius: 1.5rem;
   }
 }
