@@ -750,3 +750,8 @@ a {
     font-size: 2rem;
   }
 }
+.start-icon svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 1.5;
+}
