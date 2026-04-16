@@ -422,6 +422,13 @@ a {
   background-position: center;
 }
 
+.work-image-7 {
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)),
+    url("images/wm.png");
+  background-size: cover;
+  background-position: center;
+}
 .work-info {
   padding-top: 1.4rem;
   text-align: center;
