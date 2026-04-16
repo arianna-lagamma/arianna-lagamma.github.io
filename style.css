@@ -388,7 +388,7 @@ a {
 }
 
 .work-image-3 {
-  background: linear-gradient(180deg, #efb7c7, #eb7d63);
+  background-image: url("images/venice.png");
 }
 
 .work-image-4 {
