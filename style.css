@@ -394,7 +394,11 @@ a {
 
 
 .work-image-3 {
-  background-image: url("images/venice.png");
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)),
+    url("images/blog.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .work-image-4 {
