@@ -383,9 +383,10 @@ a {
   background-image: 
     linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)),
     url("images/compliance_dashboard.png");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: #f3efe8;
 }
 
 .work-image-2 {
