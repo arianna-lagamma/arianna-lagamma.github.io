@@ -380,7 +380,12 @@ a {
 }
 
 .work-image-1 {
-  background: linear-gradient(135deg, #e8ece7, #d9ddd7);
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)),
+    url("images/compliance_dashboard.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .work-image-2 {
