@@ -7,6 +7,28 @@
   --heading: #40433f;
 }
 
+/* Remove default link styling */
+.main-nav a {
+  text-decoration: none;   /* removes underline */
+  color: #3f3f39;          /* matches your theme */
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Add spacing between links */
+.main-nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* Optional: subtle hover effect */
+.main-nav a:hover {
+  opacity: 0.6;
+}
+
 body {
   margin: 0;
   background: var(--bg);
