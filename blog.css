@@ -7,39 +7,62 @@
   --heading: #40433f;
 }
 
-/* Remove default link styling */
-.main-nav a {
-  text-decoration: none;   /* removes underline */
-  color: #3f3f39;          /* matches your theme */
-  font-family: Arial, sans-serif;
-  font-size: 0.9rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* Add spacing between links */
-.main-nav {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: #3f3f3a;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .site-header {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
+  padding: 1.5rem 1.5rem 0;
 }
 
 .nav-pill {
-  background: #efebe5;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #e6e2dc;
   border-radius: 999px;
-  padding: 0.6rem 1.5rem;
-  border: 1px solid #d9d4cb;
+  padding: 1rem 1.5rem;
 }
 
-/* Optional: subtle hover effect */
+.main-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.72rem;
+  color: #4f4f49;
+}
+
+.home-link {
+  justify-self: start;
+  font-size: 1.15rem;
+}
+
+.contact-link {
+  justify-self: end;
+}
+
 .main-nav a:hover {
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 body {
