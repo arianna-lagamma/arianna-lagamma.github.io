@@ -73,7 +73,11 @@
       <section>
         <h2>Configuring Patch Baselines</h2>
         <p>
-          I created a custom Windows patch baseline focused on security updates and used AWS-managed baselines for Linux systems.
+        Patch baselines define what gets installed and when. For Linux instances, I used the default AWS-managed baseline to quickly apply standard updates.
+        </p>
+        
+        <p>
+        For Windows systems, I created a custom baseline to prioritize security updates while introducing a delay for approval. This reflects real-world environments where immediate patching can introduce risk if not validated.
         </p>
 
         <figure class="figure">
@@ -89,9 +93,12 @@
       <section>
         <h2>Executing Patch Operations</h2>
         <p>
-          Patch groups were used to organize instances and apply updates across environments.
+        Instead of targeting individual instances, I used patch groups to apply updates across environments. This allows for consistent patching policies without manually managing each instance.
         </p>
-
+        
+        <p>
+        Patch operations were executed through Systems Manager, which handled both scanning and installation across Windows and Linux instances.
+        </p>
         <figure class="figure">
           <div class="figure-frame">
             <img src="../images/node-patching-details.png" alt="">
@@ -105,7 +112,11 @@
       <section>
         <h2>Verifying Compliance</h2>
         <p>
-          After execution, all instances reached full compliance with zero missing updates.
+        One of the biggest advantages of Patch Manager is centralized visibility. After running patch operations, I used the compliance dashboard to validate system health across all instances.
+        </p>
+        
+        <p>
+        All instances reached full compliance, with no missing or failed patches. This demonstrates how automation reduces drift and ensures consistency across environments.
         </p>
 
         <figure class="figure">
@@ -121,8 +132,10 @@
       <section>
         <h2>Key Takeaways</h2>
         <p>
-          This project reinforced how automation and policy-based patching are critical for maintaining secure cloud environments at scale.
+        This project demonstrated how a fleet of aws instances can be patched at scale using Systems Manager. 
+          Rather than treating patching as a one-off task, Systems Manager enables a structured and repeatable approach.
         </p>
+
       </section>
 
     </article>
