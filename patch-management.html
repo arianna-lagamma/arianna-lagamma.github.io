@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Automating EC2 Patch Management</title>
+
+  <link rel="stylesheet" href="blog.css" />
+</head>
+
+<body>
+  <main class="page">
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1 class="hero-title">
+        Automating EC2 Patch Management with AWS Systems Manager
+      </h1>
+
+      <div class="hero-meta-grid">
+        <div>
+          <div class="summary-label">Article summary</div>
+          <ul class="summary-list">
+            <li>Automated patching for Windows and Linux EC2 instances</li>
+            <li>Used patch baselines and patch groups for control</li>
+            <li>Validated system-wide compliance using dashboards</li>
+          </ul>
+        </div>
+
+        <aside class="author-block">
+          <p class="author-label">Project written by</p>
+
+          <div class="author-card">
+            <div class="author-avatar">AL</div>
+            <div>
+              <p class="author-name">Arianna LaGamma</p>
+              <p class="author-role">GIS · Cloud · Cybersecurity</p>
+            </div>
+          </div>
+
+          <div class="author-tags">
+            <span>AWS</span>
+            <span>Systems Manager</span>
+            <span>CloudOps</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <article class="content">
+
+      <section class="intro">
+        <p>
+          In cloud environments, patching is a core part of maintaining security and consistency. This project focused on automating patching workflows across Windows and Linux EC2 instances using AWS Systems Manager.
+        </p>
+      </section>
+
+      <section>
+        <h2>Configuring Patch Baselines</h2>
+        <p>
+          I created a custom Windows patch baseline focused on security updates and used AWS-managed baselines for Linux systems.
+        </p>
+
+        <figure class="figure">
+          <div class="figure-frame">
+            <img src="images/patch-baseline.png" alt="">
+          </div>
+          <figcaption class="caption">
+            Custom patch baseline configuration
+          </figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>Executing Patch Operations</h2>
+        <p>
+          Patch groups were used to organize instances and apply updates across environments.
+        </p>
+
+        <figure class="figure">
+          <div class="figure-frame">
+            <img src="images/node-patching-details.png" alt="">
+          </div>
+          <figcaption class="caption">
+            Patch execution across Windows and Linux instances
+          </figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>Verifying Compliance</h2>
+        <p>
+          After execution, all instances reached full compliance with zero missing updates.
+        </p>
+
+        <figure class="figure">
+          <div class="figure-frame">
+            <img src="images/aws-dashboard.png" alt="">
+          </div>
+          <figcaption class="caption">
+            100% compliance across all systems
+          </figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>Key Takeaways</h2>
+        <p>
+          This project reinforced how automation and policy-based patching are critical for maintaining secure cloud environments at scale.
+        </p>
+      </section>
+
+    </article>
+  </main>
+</body>
+</html>
