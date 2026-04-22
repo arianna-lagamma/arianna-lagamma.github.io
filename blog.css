@@ -24,6 +24,19 @@
   align-items: center;
 }
 
+.site-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.nav-pill {
+  background: #efebe5;
+  border-radius: 999px;
+  padding: 0.6rem 1.5rem;
+  border: 1px solid #d9d4cb;
+}
+
 /* Optional: subtle hover effect */
 .main-nav a:hover {
   opacity: 0.6;
