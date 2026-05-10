@@ -365,6 +365,7 @@ a {
 
 .featured-card {
   opacity: 1;
+  transform: translateY(-4px);
 }
 
 .work-image-card {
