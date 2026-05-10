@@ -293,22 +293,6 @@
 <script>
   lucide.createIcons();
 </script>
-<script>
-  const carousel = document.querySelector(".work-carousel");
-
-  document.getElementById("workNext").addEventListener("click", () => {
-    carousel.scrollBy({
-      left: 400,
-      behavior: "smooth"
-    });
-  });
-
-  document.getElementById("workBack").addEventListener("click", () => {
-    carousel.scrollBy({
-      left: -400,
-      behavior: "smooth"
-    });
-  });
-</script>
+<script src="script.js"></script>
 </body>
 </html>
