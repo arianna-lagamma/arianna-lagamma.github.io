@@ -539,10 +539,11 @@ a {
 
 .work-progress-fill {
   display: block;
-  width: 34%;
+  width: 0%;
   height: 100%;
   background: #4c5454;
   border-radius: 999px;
+  transition: width 0.35s ease;
 }
 
 @media (max-width: 900px) {
