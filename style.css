@@ -246,6 +246,10 @@ a {
   font-size: 1.15rem;
   line-height: 1.9;
   color: #4e4e48;
+
+  margin-left:auto;
+  margin-right:auto;
+
 }
 
 .section-heading h2 {
@@ -834,4 +838,12 @@ a {
   width: 20px;
   height: 20px;
   stroke-width: 1.5;
+}
+
+#socials h2 {
+  text-align: center;
+}
+
+#socials .social-links {
+  justify-content: center;
 }
